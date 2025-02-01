@@ -15,18 +15,28 @@ const Index = () => {
     },
   ];
 
+  const skills = [
+    "Python",
+    "C",
+    "Cryptography",
+    "Offsec",
+    "App Development"
+  ];
+
   return (
     <Layout>
-      <Hero
-        name="Ayan"
-        title="Full Stack Developer"
-        description="A passionate developer crafting beautiful and functional web experiences"
-      />
-      <Projects projects={projects} />
-      <About
-        content="I'm a full-stack developer with a passion for creating elegant solutions to complex problems. With experience in modern web technologies, I focus on building scalable and maintainable applications that provide great user experiences."
-        skills={[]}
-      />
+      <div className="min-h-screen bg-gradient-soft dark:bg-gradient-purple">
+        <Hero
+          name="Ayan"
+          title="Full Stack Developer"
+          description="A passionate developer crafting beautiful and functional web experiences"
+        />
+        <Projects projects={projects} />
+        <About
+          content="I'm a full-stack developer with a passion for creating elegant solutions to complex problems. With experience in modern web technologies, I focus on building scalable and maintainable applications that provide great user experiences."
+          skills={skills}
+        />
+      </div>
     </Layout>
   );
 };
