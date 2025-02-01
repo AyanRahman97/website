@@ -40,6 +40,17 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        purple: {
+          light: "#9b87f5",
+          DEFAULT: "#7E69AB",
+          dark: "#6E59A5",
+        },
+        soft: {
+          green: "#F2FCE2",
+          yellow: "#FEF7CD",
+          purple: "#E5DEFF",
+          blue: "#D3E4FD",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -64,6 +75,11 @@ export default {
         "fade-in": "fade-in 0.5s ease-out",
         "fade-in-up": "fade-in-up 0.7s ease-out",
         float: "float 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        'gradient-soft': 'linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%)',
+        'gradient-purple': 'linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)',
+        'gradient-warm': 'linear-gradient(to right, #ee9ca7, #ffdde1)',
       },
     },
   },
